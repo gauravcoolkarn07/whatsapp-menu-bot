@@ -49,31 +49,31 @@ H Robotics & Automation
 I 📄 Cutoff List
 """
 
-    elif incoming_msg == "A":
+    elif incoming_msg == "a":
         reply = "CSE focuses on programming, AI, Data Science and software development."
 
-    elif incoming_msg == "B":
+    elif incoming_msg == "b":
         reply = "CSDS focuses on Data management and Data mining."
 
     elif incoming_msg == "c":
         reply = "Mechanical Engineering focuses on machines, thermodynamics and design."
 
-    elif incoming_msg == "D":
+    elif incoming_msg == "d":
         reply = "Civil Engineering focuses on construction and infrastructure."
 
-    elif incoming_msg == "E":
+    elif incoming_msg == "e":
         reply = "Chemical Engineering focuses on chemicals and industrial processes."
 
-    elif incoming_msg == "F":
+    elif incoming_msg == "f":
         reply = "Electrical Engineering focuses on power systems and electrical machines."
 
-    elif incoming_msg == "G":
+    elif incoming_msg == "g":
         reply = "AI & ML focuses on Machine Learning and data analysis."
 
-    elif incoming_msg == "H":
+    elif incoming_msg == "h":
         reply = "Robotics & Automation focuses on intelligent machines and automation systems."
 
-    elif incoming_msg == "I":
+    elif incoming_msg == "i":
         msg.media("https://drive.google.com/uc?export=download&id=1iQd1_x99xhyvVct0nkqXuL1r1ain8ot2")
         msg.body("📄 Here is the official cutoff list.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
@@ -92,6 +92,7 @@ I 📄 Cutoff List
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
