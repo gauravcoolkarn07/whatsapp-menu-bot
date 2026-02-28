@@ -37,12 +37,12 @@ How can we assist you today?
 Reply with course code:
 
 C1️⃣ Computer Science Engineering
-C2️⃣ Information Technology
+C2️⃣ CS Specialization in Data Science
 C3️⃣ Mechanical Engineering
 C4️⃣ Civil Engineering
-C5️⃣ Electronics Engineering
+C5️⃣ Chemical
 C6️⃣ Electrical Engineering
-C7️⃣ AI & Data Science
+C7️⃣ AI & Ml
 C8️⃣ Robotics & Automation
 c9️⃣ cutoff list
 """
@@ -52,7 +52,7 @@ c9️⃣ cutoff list
         reply = "CSE focuses on programming, AI, Data Science and software development."
 
     elif incoming_msg == "c2":
-        reply = "IT focuses on networking, cybersecurity and system management."
+        reply = "CSDS focuses on Data management,Data mining."
 
     elif incoming_msg == "c3":
         reply = "Mechanical Engineering focuses on machines, thermodynamics and design."
@@ -61,13 +61,13 @@ c9️⃣ cutoff list
         reply = "Civil Engineering focuses on construction, structures and infrastructure."
 
     elif incoming_msg == "c5":
-        reply = "Electronics Engineering focuses on circuits and communication systems."
+        reply = "Chemical Engineering focuses on chemicals and related."
 
     elif incoming_msg == "c6":
         reply = "Electrical Engineering focuses on power systems and electrical machines."
 
     elif incoming_msg == "c7":
-        reply = "AI & Data Science focuses on Machine Learning and data analysis."
+        reply = "AI & ML on Machine Learning and data analysis."
 
     elif incoming_msg == "c8":
         reply = "Robotics & Automation focuses on intelligent machines and automation systems."
@@ -100,5 +100,6 @@ Type 'Hi' to return to main menu.
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
