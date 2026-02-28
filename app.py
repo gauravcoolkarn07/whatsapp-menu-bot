@@ -27,9 +27,9 @@ How can we assist you today?🤝😎
 4️⃣ Admission Process 🚌
 """
 
-   elif incoming_msg == "1":
-    msg.body("About DY Patil College Brochure Link is given below:\n\nhttps://drive.google.com/file/d/10l5hIezC8o9IMdY-auwKp_3i2jb62r68/view?usp=drive_link\n\nType 2️⃣ to return to Courses menu.")
-    return str(response)
+    elif incoming_msg == "1":
+        msg.body("About DY Patil College Brochure Link is given below:\n\nhttps://drive.google.com/file/d/10l5hIezC8o9IMdY-auwKp_3i2jb62r68/view?usp=drive_link\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
 
     elif incoming_msg == "2":
         reply = """📚 Courses Offered:
@@ -101,6 +101,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
