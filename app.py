@@ -63,7 +63,7 @@ Reply with course code:
         return str(response)
 
     elif incoming_msg == "d":
-       msg.media("https://drive.google.com/uc?export=download&id=1kQ_7wQ-bbJAMlrbABWxNDIoJAp-9NA8j")
+        msg.media("https://drive.google.com/uc?export=download&id=1kQ_7wQ-bbJAMlrbABWxNDIoJAp-9NA8j")
         msg.body("The Civil Engineering program at DY Patil College emphasizes construction, structural design, and infrastructure development. Students gain practical knowledge in building safe and sustainable structures.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
          
@@ -102,6 +102,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
