@@ -73,7 +73,8 @@ c9️⃣ cutoff list
         reply = "Robotics & Automation focuses on intelligent machines and automation systems."
 
     elif incoming_msg == "c9":
-         msg.media("https://drive.google.com/uc?export=download&id=1iQd1_x99xhyvVct0nkqXuL1r1ain8ot2")
+
+    msg.media("https://drive.google.com/uc?export=download&id=1iQd1_x99xhyvVct0nkqXuL1r1ain8ot2")
          msg.body("📄 Here is the official cutoff list for all courses.\n\nType 2️⃣ to return to Courses menu.")
          return str(response)
 
@@ -100,6 +101,7 @@ Type 'Hi' to return to main menu.
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
