@@ -14,7 +14,7 @@ def whatsapp():
     msg = response.message()
 
     # Welcome Trigger
-    if incoming_msg in ["hi", "hello", "hey", "start"]:
+    if incoming_msg in ["hi","hii", "hello", "hey", "start"]:
         reply = """Welcome to DY Patil College of Engineering and Technology 🎓
 
 We are delighted to connect with you! Our institution is committed to providing quality education, innovation, and excellent career opportunities.
@@ -28,10 +28,54 @@ How can we assist you today?
 """
 
     elif incoming_msg == "1":
-        reply = "DY Patil College of Engineering and Technology is located in Kolhapur and provides quality technical education with modern infrastructure."
+        reply = "DY Patil College of Engineering and Technology is located in Kolhapur and provides quality technical education with modern infrastructure.
+        visit our official websitefor more information: https://coek.dypgroup.edu.in/"
 
-    elif incoming_msg == "2":
-        reply = "We offer BTech programs in CSE, IT, Mechanical, Civil, and more."
+  elif incoming_msg == "2":
+        reply = """📚 Courses Offered:
+
+Reply with course code:
+
+C1️⃣ Computer Science Engineering
+C2️⃣ Information Technology
+C3️⃣ Mechanical Engineering
+C4️⃣ Civil Engineering
+C5️⃣ Electronics Engineering
+C6️⃣ Electrical Engineering
+C7️⃣ AI & Data Science
+C8️⃣ Robotics & Automation
+c9️⃣ cutoff list
+"""
+
+    # COURSE DETAILS
+    elif incoming_msg == "c1":
+        reply = "CSE focuses on programming, AI, Data Science and software development."
+
+    elif incoming_msg == "c2":
+        reply = "IT focuses on networking, cybersecurity and system management."
+
+    elif incoming_msg == "c3":
+        reply = "Mechanical Engineering focuses on machines, thermodynamics and design."
+
+    elif incoming_msg == "c4":
+        reply = "Civil Engineering focuses on construction, structures and infrastructure."
+
+    elif incoming_msg == "c5":
+        reply = "Electronics Engineering focuses on circuits and communication systems."
+
+    elif incoming_msg == "c6":
+        reply = "Electrical Engineering focuses on power systems and electrical machines."
+
+    elif incoming_msg == "c7":
+        reply = "AI & Data Science focuses on Machine Learning and data analysis."
+
+    elif incoming_msg == "c8":
+        reply = "Robotics & Automation focuses on intelligent machines and automation systems."
+
+    elif incoming_msg == "c9":
+         msg.media("https://drive.google.com/uc?export=download&id=1iQd1_x99xhyvVct0nkqXuL1r1ain8ot2")
+         msg.body("📄 Here is the official cutoff list for all courses.\n\nType 2️⃣ to return to Courses menu.")
+         return str(response)
 
     elif incoming_msg == "3":
         reply = "📞 Contact Us:\nPhone: +91-XXXXXXXXXX\nEmail: info@dypatil.edu"
@@ -56,4 +100,5 @@ Type 'Hi' to return to main menu.
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
