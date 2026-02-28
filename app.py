@@ -47,8 +47,8 @@ Reply with course code:
 """
 
     elif incoming_msg == "a":
-        msg.media("https://drive.google.com/uc?export=download&id=1UZ5w2lS_dg7ll2ezRMehSPaGMfh1vV67")
-        msg.body("DY Patil College of Engineering and Technology, Kolhapur, offers quality technical education with modern infrastructure and experienced faculty. We provide programs in engineering, AI, and emerging technologies to prepare students for successful careers.\n\nType 2️⃣ to return to Courses menu.")
+                     msg.media("https://drive.google.com/uc?export=download&id=1d7QlpfkTIty7nMWAWx4RmH8DFPlWlSqp")
+        msg.body("This is Data Science Syllabus\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
     elif incoming_msg == "b":
