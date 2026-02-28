@@ -1,69 +1,58 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-import os
 
-app = Flask(__name__)
+app = Flask(_name_)
+
+@app.route("/", methods=["GET"])
+def home():
+    return "DY Patil WhatsApp Bot is Running 🚀"
 
 @app.route("/whatsapp", methods=["POST"])
-def whatsapp_bot():
-    incoming_msg = request.values.get('Body', '').strip().lower()
-    resp = MessagingResponse()
-    msg = resp.message()
+def whatsapp():
+    incoming_msg = request.values.get("Body", "").strip().lower()
+    response = MessagingResponse()
+    msg = response.message()
 
-    # MAIN MENU
-    if incoming_msg == "hi":
-        msg.body(
-            "Welcome to DY Patil College of Engineering and Technology 🎓
-We are delighted to connect with you! Our institution is committed to providing quality education, innovation, and excellent career opportunities. Please let us know how we can assist you today — whether it’s about courses, admissions, or campus facilities. We’re here to help!\n\n"
-            "1️⃣college info\n"
-            "2️⃣ Admissions\n"
-            "3️⃣ branches\n"
-            "4️⃣ contact\n\n"
-            "Reply with number (1-4)"
-        )
+    # Welcome Trigger
+    if incoming_msg in ["hi", "hello", "hey", "start"]:
+        reply = """Welcome to DY Patil College of Engineering and Technology 🎓
 
-    # OPTION 1
+We are delighted to connect with you! Our institution is committed to providing quality education, innovation, and excellent career opportunities.
+
+How can we assist you today?
+
+1️⃣ About College
+2️⃣ Courses Offered
+3️⃣ Contact Details
+4️⃣ Admission Process
+"""
+
     elif incoming_msg == "1":
-        msg.body(
-            "Located in kolhapur\n"
-            "•Has 3.5+ avg LPA\n"
-            "•Create oppurtuinities\n\n"
-            "Type 'menu' to go back."
-        )
+        reply = "DY Patil College of Engineering and Technology is located in Kolhapur and provides quality technical education with modern infrastructure."
 
-    # OPTION 2
     elif incoming_msg == "2":
-        msg.body(
-            "Basically based on CET Rounds\n"
-            "• Cutoff based system\n"
-            "• All scholerships available\n"
-            "Type 'menu' to go back."
-        )
+        reply = "We offer BTech programs in CSE, IT, Mechanical, Civil, and more."
 
-    # OPTION 3
     elif incoming_msg == "3":
-        msg.body(
-            "8+ branches available\n"
-            "Gives most of demsnding branches\n"
-            "Special faculty for each branch\n\n"
-            "Type 'menu' to go back."
-        )
+        reply = "📞 Contact Us:\nPhone: +91-XXXXXXXXXX\nEmail: info@dypatil.edu"
 
-    # OPTION 4
     elif incoming_msg == "4":
-        msg.body(
-            "🤖 CaptainBot v1.0\n"
-            "Built with Python + Flask\n"
-            "Deployed on Cloud 🚀\n\n"
-            "Type 'menu' to go back."
-        )
+        reply = "Admissions are based on entrance exams and merit. Visit our official website for detailed admission procedures."
 
     else:
-        msg.body("Type 'menu' to start.")
+        reply = """Please choose a valid option:
 
-    return str(resp)
+1️⃣ About College
+2️⃣ Courses Offered
+3️⃣ Contact Details
+4️⃣ Admission Process
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+Type 'Hi' to return to main menu.
+"""
 
-    app.run(host="0.0.0.0", port=port)
+    msg.body(reply)
+    return str(response)
+
+
+if _name_ == "_main_":
+    app.run(debug=True)
