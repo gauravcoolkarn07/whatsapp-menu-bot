@@ -28,53 +28,62 @@ How can we assist you today?🤝😎
 """
 
     elif incoming_msg == "1":
-        reply = """DY Patil College of Engineering and Technology is located in Kolhapur and provides quality technical education with modern infrastructure.
-
-Visit our official website for more information:
-https://coek.dypgroup.edu.in/
-"""
+        msg.media("https://drive.google.com/uc?export=download&id=10l5hIezC8o9IMdY-auwKp_3i2jb62r68")
+        msg.body("\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
 
     elif incoming_msg == "2":
         reply = """📚 Courses Offered:
 
 Reply with course code:
 
- A Computer Science Engineering
- B CS Specialization in Data Science
- C Mechanical Engineering
- D Civil Engineering
- E Chemical Engineering
- F Electrical Engineering
- G AI & ML
- H Robotics & Automation
- I 📄 Cutoff List
+ A 🖥️Computer Science Engineering
+ B 🌐CS Specialization in Data Science
+ C 🚗Mechanical Engineering
+ D 🏚️Civil Engineering
+ E 🧪Chemical Engineering
+ F ⚡Electrical Engineering
+ G 🤖Artificial intelligence and machine learning
+ H 📄 Cutoff List
 """
 
     elif incoming_msg == "a":
-        reply = "CSE focuses on programming, AI, Data Science and software development."
-
+        msg.media("https://drive.google.com/uc?export=download&id=1UZ5w2lS_dg7ll2ezRMehSPaGMfh1vV67")
+        msg.body("DY Patil College of Engineering and Technology, Kolhapur, offers quality technical education with modern infrastructure and experienced faculty. We provide programs in engineering, AI, and emerging technologies to prepare students for successful careers.\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
+        
     elif incoming_msg == "b":
-        reply = "CSDS focuses on Data management and Data mining."
-
+        msg.media("https://drive.google.com/uc?export=download&id=1s7HKZ_ea7mEG9s-MTNBNOWE8bZ3h6BbA")
+        msg.body("📄The CS Data Science program at DY Patil College emphasizes data management, machine learning, and analytics. Students learn to extract insights from large datasets and apply modern AI and data science tools for real-world solutions\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
+        
     elif incoming_msg == "c":
-        reply = "Mechanical Engineering focuses on machines, thermodynamics and design."
+        msg.media("https://drive.google.com/uc?export=download&id=1JRQarK_87ehltm1DxaZLTB7FBE1sFUMc")
+        msg.body("The Mechanical Engineering program at DY Patil College focuses on design, thermodynamics, and machinery. Students gain practical skills in mechanical systems, manufacturing processes, and engineering problem-solving\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
 
     elif incoming_msg == "d":
-        reply = "Civil Engineering focuses on construction and infrastructure."
-
+       msg.media("https://drive.google.com/uc?export=download&id=1kQ_7wQ-bbJAMlrbABWxNDIoJAp-9NA8j")
+        msg.body("The Civil Engineering program at DY Patil College emphasizes construction, structural design, and infrastructure development. Students gain practical knowledge in building safe and sustainable structures.\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
+         
     elif incoming_msg == "e":
-        reply = "Chemical Engineering focuses on chemicals and industrial processes."
-
+        msg.media("https://drive.google.com/uc?export=download&id=1Vn2G2wdyD0pRu1R_tuNu4GteJYnYNNwv")
+        msg.body("The Chemical Engineering program at DY Patil College focuses on chemical processes, industrial operations, and material science. Students learn to design and manage safe, efficient chemical production systems.\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
+        
     elif incoming_msg == "f":
-        reply = "Electrical Engineering focuses on power systems and electrical machines."
+        msg.media("https://drive.google.com/uc?export=download&id=1qpXdv9atZJKxYdiC-NW__AKMaWGcDb2h")
+        msg.body("The Electrical Engineering program at DY Patil College focuses on power systems, electrical machines, and energy management. Students gain hands-on experience in designing, operating, and maintaining electrical infrastructure.\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
+        
 
     elif incoming_msg == "g":
-        reply = "AI & ML focuses on Machine Learning and data analysis."
-
+        msg.media("https://drive.google.com/uc?export=download&id=1DP6VJYwKu_ipGmCA1zgM2nYux0MrW_Fa")
+        msg.body("The AI & ML program at DY Patil College focuses on artificial intelligence, machine learning, and data analysis. Students learn to develop intelligent systems and apply AI solutions to real-world problems.\n\nType 2️⃣ to return to Courses menu.")
+        return str(response)
+  
     elif incoming_msg == "h":
-        reply = "Robotics & Automation focuses on intelligent machines and automation systems."
-
-    elif incoming_msg == "i":
         msg.media("https://drive.google.com/uc?export=download&id=1iQd1_x99xhyvVct0nkqXuL1r1ain8ot2")
         msg.body("📄 Here is the official cutoff list.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
@@ -93,6 +102,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
