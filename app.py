@@ -38,15 +38,15 @@ https://coek.dypgroup.edu.in/
 
 Reply with course code:
 
-A: Computer Science Engineering
-B: CS Specialization in Data Science
-C: Mechanical Engineering
-D: Civil Engineering
-E: Chemical Engineering
-F: Electrical Engineering
-G: AI & ML
-H: Robotics & Automation
-I: 📄 Cutoff List
+A Computer Science Engineering
+B CS Specialization in Data Science
+C Mechanical Engineering
+D Civil Engineering
+E Chemical Engineering
+F Electrical Engineering
+G AI & ML
+H Robotics & Automation
+I 📄 Cutoff List
 """
 
     elif incoming_msg == "A":
@@ -92,5 +92,6 @@ I: 📄 Cutoff List
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
