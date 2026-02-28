@@ -11,41 +11,41 @@ def whatsapp_bot():
     msg = resp.message()
 
     # MAIN MENU
-    if incoming_msg == "menu":
+    if incoming_msg == "hi":
         msg.body(
-            "🤖 CaptainBot Main Menu\n\n"
-            "1️⃣ IPL Info\n"
-            "2️⃣ Python Help\n"
-            "3️⃣ Motivation\n"
-            "4️⃣ About\n\n"
+            "Welcome to DY Patil College of Engineering and Technology 🎓
+We are delighted to connect with you! Our institution is committed to providing quality education, innovation, and excellent career opportunities. Please let us know how we can assist you today — whether it’s about courses, admissions, or campus facilities. We’re here to help!\n\n"
+            "1️⃣college info\n"
+            "2️⃣ Admissions\n"
+            "3️⃣ branches\n"
+            "4️⃣ contact\n\n"
             "Reply with number (1-4)"
         )
 
     # OPTION 1
     elif incoming_msg == "1":
         msg.body(
-            "🏏 IPL Info:\n"
-            "• Season starts March 2026\n"
-            "• 10 Teams Competing\n\n"
+            "Located in kolhapur\n"
+            "•Has 3.5+ avg LPA\n"
+            "•Create oppurtuinities\n\n"
             "Type 'menu' to go back."
         )
 
     # OPTION 2
     elif incoming_msg == "2":
         msg.body(
-            "💻 Python Help:\n"
-            "• Practice daily\n"
-            "• Build projects\n"
-            "• Learn Flask & APIs\n\n"
+            "Basically based on CET Rounds\n"
+            "• Cutoff based system\n"
+            "• All scholerships available\n"
             "Type 'menu' to go back."
         )
 
     # OPTION 3
     elif incoming_msg == "3":
         msg.body(
-            "🔥 Motivation:\n"
-            "Discipline > Motivation\n"
-            "Consistency wins ❤️‍🔥\n\n"
+            "8+ branches available\n"
+            "Gives most of demsnding branches\n"
+            "Special faculty for each branch\n\n"
             "Type 'menu' to go back."
         )
 
@@ -65,4 +65,5 @@ def whatsapp_bot():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
+
     app.run(host="0.0.0.0", port=port)
