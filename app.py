@@ -47,13 +47,13 @@ Reply with course code:
 """
 
     elif incoming_msg == "a":
-                     msg.media("https://drive.google.com/uc?export=download&id=1d7QlpfkTIty7nMWAWx4RmH8DFPlWlSqp")
-        msg.body("This is Data Science Syllabus\n\nType 2️⃣ to return to Courses menu.")
+        msg.media("https://drive.google.com/uc?export=download&id=1JRQarK_87ehltm1DxaZLTB7FBE1sFUMc")
+        msg.body("The Mechanical Engineering program at DY Patil College focuses on design, thermodynamics, and machinery. Students gain practical skills in mechanical systems, manufacturing processes, and engineering problem-solving\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
     elif incoming_msg == "b":
-        msg.media("https://drive.google.com/uc?export=download&id=1s7HKZ_ea7mEG9s-MTNBNOWE8bZ3h6BbA")
-        msg.body("📄The CS Data Science program at DY Patil College emphasizes data management, machine learning, and analytics. Students learn to extract insights from large datasets and apply modern AI and data science tools for real-world solutions\n\nType 2️⃣ to return to Courses menu.")
+        msg.media("https://drive.google.com/uc?export=download&id=1d7QlpfkTIty7nMWAWx4RmH8DFPlWlSqp")
+        msg.body("📄The CS Data Science program at DY Patil College emphasizes data management, machine learning, and analytics.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
     elif incoming_msg == "c":
