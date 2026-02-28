@@ -1,7 +1,7 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def home():
@@ -90,5 +90,6 @@ C9️⃣ 📄 Cutoff List
     msg.body(reply)
     return str(response)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
+
