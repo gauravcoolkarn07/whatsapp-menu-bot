@@ -16,14 +16,15 @@ def whatsapp():
     if incoming_msg in ["hi","hii","hello","hey","start"]:
         reply = """Welcome to DY Patil College of Engineering and Technology 🎓
 
-We are delighted to connect with you! Our institution is committed to providing quality education and innovation.
+We are delighted to connect with you! Our institution is committed to providing quality education and innovation.🤖🔥
 
-How can we assist you today?
 
-1️⃣ About College
-2️⃣ Courses Offered
-3️⃣ Contact Details
-4️⃣ Admission Process
+How can we assist you today?🤝😎
+
+1️⃣ About College 🏫
+2️⃣ Courses Offered 📚
+3️⃣ Contact Details ☎️
+4️⃣ Admission Process 🚌
 """
 
     elif incoming_msg == "1":
@@ -92,6 +93,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
