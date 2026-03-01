@@ -28,7 +28,8 @@ How can we assist you today?🤝😎
 """
 
     elif incoming_msg == "1":
-        msg.body("About DY Patil College Brochure Link is given below:\n\nhttps://drive.google.com/file/d/10l5hIezC8o9IMdY-auwKp_3i2jb62r68/view?usp=drive_link\n\nType 2️⃣ to return to Courses menu.")
+        msg.media("https://drive.google.com/uc?export=download&id=1o1s7TXSydZRVAu_LQ3sjSevxgZ3r4tan")
+        msg.body("About DY Patil College Brochure Link is given above:\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
 
     elif incoming_msg == "2":
@@ -47,38 +48,38 @@ Reply with course code:
 """
 
     elif incoming_msg == "a":
-        msg.media("https://drive.google.com/uc?export=download&id=1JRQarK_87ehltm1DxaZLTB7FBE1sFUMc")
-        msg.body("The Mechanical Engineering program at DY Patil College focuses on design, thermodynamics, and machinery. Students gain practical skills in mechanical systems, manufacturing processes, and engineering problem-solving\n\nType 2️⃣ to return to Courses menu.")
+        msg.media("https://drive.google.com/uc?export=download&id=1o1s7TXSydZRVAu_LQ3sjSevxgZ3r4tan")
+        msg.body("DY Patil College offers a comprehensive Computer Science Engineering (CSE) program that focuses on programming, software development, AI, and data science. Students gain hands-on experience with modern technologies and are prepared for careers in IT and research\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
     elif incoming_msg == "b":
-        msg.media("https://drive.google.com/uc?export=download&id=1d7QlpfkTIty7nMWAWx4RmH8DFPlWlSqp")
+        msg.media("https://drive.google.com/uc?export=download&id=1mZjQXQUZjH6DZQLvuSatK9S9QO8JcAT0")
         msg.body("📄The CS Data Science program at DY Patil College emphasizes data management, machine learning, and analytics.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
     elif incoming_msg == "c":
-        msg.media("https://drive.google.com/uc?export=download&id=1JRQarK_87ehltm1DxaZLTB7FBE1sFUMc")
+        msg.media("https://drive.google.com/uc?export=download&id=1QAusOiXYO1cdmhYaxj7_n0SSYpebycFB")
         msg.body("The Mechanical Engineering program at DY Patil College focuses on design, thermodynamics, and machinery. Students gain practical skills in mechanical systems, manufacturing processes, and engineering problem-solving\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
 
     elif incoming_msg == "d":
-        msg.media("https://drive.google.com/uc?export=download&id=1kQ_7wQ-bbJAMlrbABWxNDIoJAp-9NA8j")
+        msg.media("https://drive.google.com/uc?export=download&id=1HkoInTHKu4O9VRIV-0WE0SV-LOv2pbEv")
         msg.body("The Civil Engineering program at DY Patil College emphasizes construction, structural design, and infrastructure development. Students gain practical knowledge in building safe and sustainable structures.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
          
     elif incoming_msg == "e":
-        msg.media("https://drive.google.com/uc?export=download&id=1Vn2G2wdyD0pRu1R_tuNu4GteJYnYNNwv")
+        msg.media("https://drive.google.com/uc?export=download&id=1Vo7KxZAFxft9vSylEDtTySs_rjYyZYmr")
         msg.body("The Chemical Engineering program at DY Patil College focuses on chemical processes, industrial operations, and material science. Students learn to design and manage safe, efficient chemical production systems.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
     elif incoming_msg == "f":
-        msg.media("https://drive.google.com/uc?export=download&id=1qpXdv9atZJKxYdiC-NW__AKMaWGcDb2h")
+        msg.media("https://drive.google.com/uc?export=download&id=177WUJaxxInFR5sjxNNth-DBffnTytwbe")
         msg.body("The Electrical Engineering program at DY Patil College focuses on power systems, electrical machines, and energy management. Students gain hands-on experience in designing, operating, and maintaining electrical infrastructure.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
         
 
     elif incoming_msg == "g":
-        msg.media("https://drive.google.com/uc?export=download&id=1DP6VJYwKu_ipGmCA1zgM2nYux0MrW_Fa")
+        msg.media("https://drive.google.com/uc?export=download&id=165KbsNUqyvVNVKW5WxYDbGO75vniEWrL")
         msg.body("The AI & ML program at DY Patil College focuses on artificial intelligence, machine learning, and data analysis. Students learn to develop intelligent systems and apply AI solutions to real-world problems.\n\nType 2️⃣ to return to Courses menu.")
         return str(response)
   
@@ -91,7 +92,7 @@ Reply with course code:
         reply = "📞 Contact Us:\nPhone: +91-XXXXXXXXXX\nEmail: info@dypatil.edu"
 
     elif incoming_msg == "4":
-        reply = "Admissions are based on entrance exams and merit. Visit our official website for details."
+        reply = "1️⃣ Bus🚌 Our college provides safe and reliable bus transportation covering major city routes for students and staff/n2️⃣ Library📚 The college library offers a vast collection of books, journals, digital resources, and a peaceful study environment./n3️⃣LLC (Liberal Learning Courses)🎓 Our college offers 25 Liberal Learning Course (LLC) clubs that enhance students’ skills beyond academics through diverse extracurricular activities./n4️⃣ Canteen🍽️ The college canteen serves hygienic, affordable, and nutritious food for students and staff./n5️⃣ NCC🎖️ NCC develops discipline, leadership, and patriotism through structured military training programs.️⃣ NSS🤝 NSS encourages social responsibility by engaging students in community service and social development activities./n7️⃣ Cultural Activities🎭 The cultural committee organizes events, competitions, and festivals to showcase students’ creative talents.8️⃣ Sports / Gymkhana🏆 The Gymkhana promotes physical fitness through various indoor and outdoor sports facilities and tournaments. "
 
     else:
         reply = "Please type 'Hi' to return to main menu."
@@ -101,6 +102,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
