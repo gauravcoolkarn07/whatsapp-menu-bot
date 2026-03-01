@@ -81,7 +81,8 @@ Reply with course code:
     elif incoming_msg == "g":
         msg.media("https://drive.google.com/uc?export=download&id=1QAusOiXYO1cdmhYaxj7_n0SSYpebycFB")
         msg.body("The Mechanical Engineering program 🚗 at DY Patil College focuses on design, thermodynamics, and machinery. Students gain practical skills in mechanical systems, manufacturing processes, and engineering problem-solving\n\nType 2️⃣ to return to Courses menu.")
-  
+        return str(response)
+        
     elif incoming_msg == "h":
         msg.media("https://drive.google.com/uc?export=download&id=1iQd1_x99xhyvVct0nkqXuL1r1ain8ot2")
         msg.body("📄 Here is the official cutoff list.\n\nType 2️⃣ to return to Courses menu.")
@@ -101,6 +102,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
