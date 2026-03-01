@@ -24,12 +24,12 @@ How can we assist you today?🤝😎
 1️⃣ About College 🏫
 2️⃣ Courses Offered 📚
 3️⃣ Contact Details ☎️
-4️⃣ Admission Process 🚌
+4️⃣ Facilities🚌
 """
 
     elif incoming_msg == "1":
         msg.media("https://drive.google.com/uc?export=download&id=1qZcrfrgNR4lzItRAKHD2w0GOlppJjyh3")
-        msg.body("DY Patil College of Engineering and Technology, Kolhapur, is a premier institution dedicated to excellence in technical education. With modern infrastructure, experienced faculty, and industry-oriented programs, the college prepares students for successful careers in engineering, innovation, and research./nAbout DY Patil College Brochure Link is given above:\n\nType 2️⃣ to return to Courses menu.")
+        msg.body("DY Patil College of Engineering and Technology, Kolhapur, is a premier institution dedicated to excellence in technical education. With modern infrastructure, experienced faculty, and industry-oriented programs, the college prepares students for successful careers in engineering, innovation, and research.About DY Patil College Brochure Link is given above: \n\nType 2️⃣ to return to Courses menu.")
         return str(response)
 
     elif incoming_msg == "2":
@@ -91,7 +91,7 @@ Reply with course code:
         reply = "📞 Contact Us:\nPhone: 0231-2601431/32/33\nEmail:info.dypcet@dypgroup.edu.in"
 
     elif incoming_msg == "4":
-        reply = "1️⃣ Bus🚌 Our college provides safe and reliable bus transportation covering major city routes for students and staff/n2️⃣ Library📚 The college library offers a vast collection of books, journals, digital resources, and a peaceful study environment./n3️⃣LLC (Liberal Learning Courses)🎓 Our college offers 25 Liberal Learning Course (LLC) clubs that enhance students’ skills beyond academics through diverse extracurricular activities./n4️⃣ Canteen🍽️ The college canteen serves hygienic, affordable, and nutritious food for students and staff./n5️⃣ NCC🎖️ NCC develops discipline, leadership, and patriotism through structured military training programs.️⃣ NSS🤝 NSS encourages social responsibility by engaging students in community service and social development activities./n7️⃣ Cultural Activities🎭 The cultural committee organizes events, competitions, and festivals to showcase students’ creative talents.8️⃣ Sports / Gymkhana🏆 The Gymkhana promotes physical fitness through various indoor and outdoor sports facilities and tournaments. "
+        reply = "1️⃣ Bus🚌 Our college provides safe and reliable bus transportation covering major city routes for students and staff \n\n2️⃣ Library📚 The college library offers a vast collection of books, journals, digital resources, and a peaceful study environment.\n\n3️⃣LLC (Liberal Learning Courses)🎓 Our college offers 25 Liberal Learning Course (LLC) clubs that enhance students’ skills beyond academics through diverse extracurricular activities.\n\n4️⃣ Canteen🍽️ The college canteen serves hygienic, affordable, and nutritious food for students and staff.\n\n5️⃣ NCC🎖️ NCC develops discipline, leadership, and patriotism through structured military training programs.️⃣ NSS🤝 NSS encourages social responsibility by engaging students in community service and social development activities.\n\n7️⃣ Cultural Activities🎭 The cultural committee organizes events, competitions, and festivals to showcase students’ creative talents.\n\n8️⃣ Sports / Gymkhana🏆 The Gymkhana promotes physical fitness through various indoor and outdoor sports facilities and tournaments. "
 
     else:
         reply = "Please type 'Hi' to return to main menu."
@@ -101,6 +101,7 @@ Reply with course code:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
